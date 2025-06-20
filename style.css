@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 30px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1d232c;
+}
+.navbar-links a:hover{
+    text-decoration:underline;
+     color: #1d232c;
+}
+.navbar-menu-toggle{
+    display:none;
+}
+/*side navbar*/
+.side-navbar{
+    background-color: #1d232c;
+    width: 30%;
+    height:100%;
+    position: fixed;
+    top: 0px;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.header-img img{
+    border-radius: 10px;
+}
+.header-button{
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+margin: 10px;
+background-color:#1d232c;
+color: white;
+cursor:pointer;
+}
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival-button{
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin: 10px;
+color:#1d232c;
+position: absolute;
+top:50%;
+left: 18%;
+border-radius: 10px;
+border:none;
+}
+.new-arrival-container img{
+    border-radius: 10px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+    
+}
+.news-input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border:solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color:#f2f4f7;
+    background-color:#1d232c;
+    border-radius: 10px;
+    padding: 10px;
+}
+/*footer*/
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color:#1d232c;
+    color: white;
+}
+
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 75%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+     border: none;
+     background-color: transparent;
+     width: 100%;
+     margin-top: -7px;
+     margin-bottom: -7px;
+     
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.products-box img{
+    border-radius: 10px;
+}
+
+/*contact*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.contact-container {
+  background-color: #2f2f2f;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/*media query*/
+@media screen and (max-width:700px){
+.navbar-menu-toggle{
+    display:block;
+}
+.navbar-links{
+    display: none;
+}
+.header-img{
+    display: none;
+}
+.service-container-1{
+    display: none;
+}
+.service-container-2{
+    flex-direction: column;
+}
+}
+
+    
+
